@@ -45,4 +45,9 @@ sleep 10s
 	sudo mkdir /etc/sysctl.d/
 	echo 'vm.swappiness=10' | sudo tee /etc/sysctl.d/99-swappiness.conf
 
+    echo "# If running from tty1 start sway
+        if [ "$(tty)" = \"/dev/tty1\" ]; then
+            exec sway
+        fi" >> .bashrc
+
 clear
