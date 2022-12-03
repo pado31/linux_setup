@@ -23,3 +23,15 @@ sleep 3s
 	sudo xbps-install -Syu
 
 clear
+
+cho "Installing packages..."
+sleep 3s
+	sudo xbps-install -Sy dbus-elogind polkit elogind mesa-dri gvfs sway git qrcp screenFetch nano wget 
+	
+clear
+
+echo "Create directory..."
+sleep 3s
+    cd ~ && mkdir code pics notes download
+    cd ~ && mkdir -p .config/sway
+clear
