@@ -24,7 +24,7 @@ sleep 3s
 
 clear
 
-cho "Installing packages..."
+echo "Installing packages..."
 sleep 3s
 	sudo xbps-install -Sy dbus-elogind polkit elogind mesa-dri gvfs sway git qrcp screenFetch nano wget 
 	
@@ -51,3 +51,6 @@ sleep 10s
         fi" >> .bashrc
 
 clear
+
+read -p "Done! Press ENTER to reboot."
+	sudo shutdown -r now
