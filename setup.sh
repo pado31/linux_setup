@@ -26,7 +26,7 @@ clear
 
 echo "Installing packages..."
 sleep 3s
-	sudo xbps-install -Sy dbus-elogind polkit elogind mesa-dri gvfs sway git qrcp screenFetch nano wget 
+	sudo xbps-install -Sy dbus-elogind polkit elogind mesa-dri gvfs sway git lazygit qrcp screenFetch nano wget 
 	
 clear
 
