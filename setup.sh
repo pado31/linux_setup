@@ -50,6 +50,7 @@ sleep 10s
             exec sway
         fi" >> .bashrc
 
+    cp dotfiles/sway/config ~/.config/sway/config
 clear
 
 read -p "Done! Press ENTER to reboot."
