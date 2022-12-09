@@ -32,8 +32,7 @@ clear
 
 echo "Create directory..."
 sleep 3s
-    cd ~ && mkdir code pics notes download
-    cd ~ && mkdir -p .config/sway
+    cd ~ && mkdir code pics notes download .config
 clear
 
 echo "Configuring system..."
@@ -50,7 +49,7 @@ sleep 10s
             exec sway
         fi" >> .bashrc
 
-    cp dotfiles/sway/config ~/.config/sway/config
+    cp dotfiles/.config/ ~/.config/
 clear
 
 read -p "Done! Press ENTER to reboot."
