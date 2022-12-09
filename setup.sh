@@ -26,13 +26,13 @@ clear
 
 echo "Installing packages..."
 sleep 3s
-	sudo xbps-install -Sy swaylock swayidle dbus-elogind polkit elogind mesa-dri gvfs sway git lazygit github-cli  qrcp neofetch nano wget firefox alsa-utils brightnessctl
+	sudo xbps-install -Sy swaylock swayidle dbus-elogind polkit elogind mesa-dri gvfs sway git lazygit github-cli  qrcp neofetch nano wget firefox alsa-utils brightnessctl fonts-roboto-ttf
 	
 clear
 
 echo "Create directory..."
 sleep 3s
-    cd ~ && mkdir code pics notes download .config
+    cd ~ && mkdir Code Pics Notes Download .config
 clear
 
 echo "Configuring system..."
