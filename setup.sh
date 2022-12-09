@@ -26,7 +26,7 @@ clear
 
 echo "Installing packages..."
 sleep 3s
-	sudo xbps-install -Sy dbus-elogind polkit elogind mesa-dri gvfs sway git lazygit qrcp neofetch nano wget firefox 
+	sudo xbps-install -Sy dbus-elogind polkit elogind mesa-dri gvfs sway git lazygit github-cli  qrcp neofetch nano wget firefox 
 	
 clear
 
