@@ -1,2 +1,2 @@
-# linux_setup
-Scripts and dotfiles for set Linux up
+# Setup void linux with sway
+## Device: Thinkpad X1 Carbon Gen 6 (ch-fr keyboard customized as qwerty)
