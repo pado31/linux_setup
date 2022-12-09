@@ -26,7 +26,7 @@ clear
 
 echo "Installing packages..."
 sleep 3s
-	sudo xbps-install -Sy dbus-elogind polkit elogind mesa-dri gvfs sway git lazygit github-cli  qrcp neofetch nano wget firefox 
+	sudo xbps-install -Sy swaylock swayidle dbus-elogind polkit elogind mesa-dri gvfs sway git lazygit github-cli  qrcp neofetch nano wget firefox 
 	
 clear
 
@@ -50,6 +50,8 @@ sleep 10s
         fi" >> .bashrc
 
     cp dotfiles/.config/ ~/.config/
+    # Maybe useless...
+    # sudo chmod +x ~/.config/sway/swaybar.sh
     cp dotfiles/xkb/symbols/ch_qwerty /usr/share/X11/xkb/symbols/
 clear
 
