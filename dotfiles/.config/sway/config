@@ -28,7 +28,7 @@ output * bg /home/ap/pics/xmas_tree_wp.jpeg fill
 
 ### Idle configuration
 #
-exec swayidle -w timeout 20 'swaylock -f -c 000000' timeout 25 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep 'swaylock -f -c 000000'
+exec swayidle -w timeout 600 'swaylock -f -c 000000' timeout 605 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep 'swaylock -f -c 000000'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
