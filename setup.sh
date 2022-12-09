@@ -50,6 +50,7 @@ sleep 10s
         fi" >> .bashrc
 
     cp dotfiles/.config/ ~/.config/
+    cp dotfiles/xkb/symbols/ch_qwerty /usr/share/X11/xkb/symbols/
 clear
 
 read -p "Done! Press ENTER to reboot."
