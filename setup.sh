@@ -26,7 +26,7 @@ clear
 
 echo "Installing packages..."
 sleep 3s
-	sudo xbps-install -Sy swaylock swayidle dbus-elogind polkit elogind mesa-dri gvfs sway git lazygit github-cli  qrcp neofetch nano wget firefox 
+	sudo xbps-install -Sy swaylock swayidle dbus-elogind polkit elogind mesa-dri gvfs sway git lazygit github-cli  qrcp neofetch nano wget firefox alsa-utils 
 	
 clear
 
@@ -39,6 +39,7 @@ echo "Configuring system..."
 sleep 10s
     sudo ln -s /etc/sv/dbus /var/service/
     sudo ln -s /etc/sv/polkitd /var/service/
+    sudo ln -s /etc/sv/alsa /var/service/
     sudo sv down acpid
     sudo rm /var/service/acpid
 	sudo mkdir /etc/sysctl.d/
