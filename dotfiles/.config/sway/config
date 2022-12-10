@@ -200,6 +200,7 @@ bindsym XF86Search exec $menu
 #
 # Status Bar:
 #
+# Swaybar
 # Read `man 5 sway-bar` for more information about this section.
 # bar {
 #     position top
@@ -215,7 +216,8 @@ bindsym XF86Search exec $menu
 #         inactive_workspace #32323200 #32323200 #5c5c5c
 #     }
 # }
-
+#
+# Waybar
 bar { 
      swaybar_command waybar
 }
