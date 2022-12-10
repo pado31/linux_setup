@@ -3,6 +3,10 @@
 
 ![alt text](https://github.com/pado31/linux_setup/blob/void_sway/img/ps_20221210200617.png?raw=true)
 
+### Waring
+Use it carefully - I am not responsible for your ricing ;)
+
+
 ### Guide
 Run the script 
 ```
