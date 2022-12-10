@@ -27,7 +27,7 @@ clear
 echo "Installing packages..."
 sleep 3s
     # xorg-fonts Try without it
-	sudo xbps-install -Sy swaylock swayidle dbus-elogind polkit elogind mesa-dri gvfs fonts-roboto-ttf font-awesome sway git lazygit github-cli qrcp neofetch nano wget firefox alsa-utils brightnessctl tlp tlp-rdw waybar grim
+	sudo xbps-install -Sy swaylock swayidle dbus-elogind polkit elogind mesa-dri gvfs fonts-roboto-ttf font-awesome sway git lazygit github-cli qrcp neofetch nano wget firefox alsa-utils brightnessctl tlp tlp-rdw waybar grim htop
 	
 clear
 
