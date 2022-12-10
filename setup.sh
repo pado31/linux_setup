@@ -27,13 +27,13 @@ clear
 echo "Installing packages..."
 sleep 3s
     # xorg-fonts Try without it
-	sudo xbps-install -Sy swaylock swayidle dbus-elogind polkit elogind mesa-dri gvfs fonts-roboto-ttf font-awesome sway git lazygit github-cli qrcp neofetch nano wget firefox alsa-utils brightnessctl tlp tlp-rdw waybar
+	sudo xbps-install -Sy swaylock swayidle dbus-elogind polkit elogind mesa-dri gvfs fonts-roboto-ttf font-awesome sway git lazygit github-cli qrcp neofetch nano wget firefox alsa-utils brightnessctl tlp tlp-rdw waybar grim
 	
 clear
 
 echo "Create directory..."
 sleep 3s
-    cd ~ && mkdir Code Pics Notes Download .config
+    cd ~ && mkdir -p Code Pics/Screenshots Notes Download .config
 clear
 
 echo "Configuring system..."
@@ -55,7 +55,7 @@ sleep 10s
         fi" >> .bashrc
 
     sudo cp -a linux_setup/dotfiles/.config/. ~/.config/
-    
+
     cp dotfiles/xkb/symbols/ch_qwerty /usr/share/X11/xkb/symbols/
 clear
 

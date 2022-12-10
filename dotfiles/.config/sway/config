@@ -41,6 +41,12 @@ input "1:1:AT_Translated_Set_2_keyboard" {
 }
 
 
+for_window [title="^foot$"] {
+  floating enable
+  resize set width 1200px
+  move position center
+}
+
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
 
@@ -222,5 +228,21 @@ bar {
      swaybar_command waybar
 }
 
+#
+# Screen capture
+#
+set $screenshot 1 selected, 2 whole, 3 selected clipboard, 4 whole clipboard
+mode "$screenshot" {
+    bindsym 1 exec 'grim -g "$(slurp)" ~/Pics/Screenshots/ps_$(date +"%Y%m%d%H%M%S").png', mode "default"
+    bindsym 2 exec 'grim ~/Pics/Screenshots/ps_$(date +"%Y%m%d%H%M%S").png', mode "default"
+    bindsym 3 exec 'grim -g "$(slurp)" - | wl-copy', mode "default"
+    bindsym 4 exec 'grim - | wl-copy', mode "default"
+
+# back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym $mod+Print mode "default"
+}
+bindsym $mod+Print mode "$screenshot"
 
 include /etc/sway/config.d/*
