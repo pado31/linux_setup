@@ -201,19 +201,24 @@ bindsym XF86Search exec $menu
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
-bar {
-    position top
+# bar {
+#     position top
 
-    font roboto_regular
+#     font roboto_regular
 
-    # When the status_command prints a new line to stdout, swaybar updates.
-    status_command while ~/.config/sway/swaybar.sh; do sleep 10; done
+#     # When the status_command prints a new line to stdout, swaybar updates.
+#     status_command while ~/.config/sway/swaybar.sh; do sleep 10; done
 
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
+#     colors {
+#         statusline #ffffff
+#         background #323232
+#         inactive_workspace #32323200 #32323200 #5c5c5c
+#     }
+# }
+
+bar { 
+     swaybar_command waybar
 }
+
 
 include /etc/sway/config.d/*
