@@ -27,7 +27,7 @@ clear
 echo "Installing packages..."
 sleep 3s
     # xorg-fonts Try without it
-	sudo xbps-install -Sy swaylock swayidle dbus-elogind polkit elogind mesa-dri gvfs fonts-roboto-ttf sway git lazygit github-cli qrcp neofetch nano wget firefox alsa-utils brightnessctl
+	sudo xbps-install -Sy swaylock swayidle dbus-elogind polkit elogind mesa-dri gvfs fonts-roboto-ttf sway git lazygit github-cli qrcp neofetch nano wget firefox alsa-utils brightnessctl tlp tlp-rdw
 	
 clear
 
@@ -41,6 +41,7 @@ sleep 10s
     sudo ln -s /etc/sv/dbus /var/service/
     sudo ln -s /etc/sv/polkitd /var/service/
     sudo ln -s /etc/sv/alsa /var/service/
+    sudo ln -s /etc/sv/tlp /var/service/
     
     sudo sv down acpid
     sudo rm /var/service/acpid
