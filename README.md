@@ -19,6 +19,6 @@ Notes about some packages:
 - **sway** window manager;
 - **waybar** status bar
 - **alsa** audio management (try `alsamixer`);
-- **qrcp** file exchangers between terminal and smartphone through a QR code;
+- **qrcp** file exchanger between terminal and smartphone through a QR code;
 - **tlp** power management;
 - **grim** for screenshots.
