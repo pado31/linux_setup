@@ -1,2 +1,4 @@
-# linux_setup
-Scripts and dotfiles for set Linux up
+# Linux setup
+Scripts and dotfiles for set Linux up.
+
+Each branch is a specific configuration.
