@@ -27,7 +27,7 @@ clear
 echo "Installing packages..."
 sleep 3s
     # xorg-fonts Try without it
-	sudo xbps-install -Sy swaylock swayidle dbus-elogind polkit elogind mesa-dri gvfs fonts-roboto-ttf font-awesome sway git lazygit github-cli qrcp neofetch nano wget firefox alsa-utils brightnessctl tlp tlp-rdw grim htop
+	sudo xbps-install -Sy swaylock swayidle dbus-elogind polkit elogind mesa-dri gvfs fonts-roboto-ttf font-awesome sway git lazygit github-cli qrcp neofetch nano wget firefox alsa-utils brightnessctl tlp tlp-rdw grim htop foot dmenu
 	
 clear
 
@@ -57,7 +57,7 @@ sleep 10s
 
     sudo cp -a linux_setup/dotfiles/.config/. ~/.config/
 
-    cp dotfiles/xkb/symbols/ch_qwerty /usr/share/X11/xkb/symbols/
+    sudo cp dotfiles/xkb/symbols/ch_qwerty /usr/share/X11/xkb/symbols/
 clear
 
 read -p "Done! Press ENTER to reboot."
