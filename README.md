@@ -33,3 +33,7 @@ If unfortunately you use Windows, fortunately it has disappeared from void-grub,
 
 - Set GRUB_DISABLE_OS_PROBER=false in /etc/default/grub;
 - ``` $ sudo update-grub ```
+
+
+Wallpaper: Picture of <a href="https://unsplash.com/it/@kierancwhite?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kieran White</a> from <a href="https://unsplash.com/it/foto/SBdmQcW8qag?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
