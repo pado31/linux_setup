@@ -27,13 +27,14 @@ clear
 echo "Installing packages..."
 sleep 3s
     # xorg-fonts Try without it
-	sudo xbps-install -Sy swaylock swayidle dbus-elogind polkit elogind mesa-dri gvfs fonts-roboto-ttf font-awesome sway git lazygit github-cli qrcp neofetch nano wget firefox alsa-utils brightnessctl tlp tlp-rdw waybar grim htop
+	sudo xbps-install -Sy swaylock swayidle dbus-elogind polkit elogind mesa-dri gvfs fonts-roboto-ttf font-awesome sway git lazygit github-cli qrcp neofetch nano wget firefox alsa-utils brightnessctl tlp tlp-rdw grim htop
 	
 clear
 
 echo "Create directory..."
 sleep 3s
     cd ~ && mkdir -p Code Pics/Screenshots Notes Download .config
+    sudo cp -a linux_setup/img/wallpaper/xmas_tree_wp.jpeg ~/Pics/xmas_tree_wp.jpeg
 clear
 
 echo "Configuring system..."
