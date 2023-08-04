@@ -26,3 +26,10 @@ Notes about some packages:
 - **qrcp** file exchanger between terminal and smartphone through a QR code;
 - **tlp** power management;
 - **grim** for screenshots.
+
+
+### P.S.
+If unfortunately you use Windows, fortunately it has disappeared from void-grub, but you are really convinced that you want to use it, perform the following steps:
+
+- Set GRUB_DISABLE_OS_PROBER=false in /etc/default/grub;
+- ``` $ sudo update-grub ```
