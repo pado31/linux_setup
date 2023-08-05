@@ -57,8 +57,7 @@ sleep 10s
 
     sudo cp -a linux_setup/dotfiles/.config/. ~/.config/
 
-    cp dotfiles/xkb/symbols/ch_qwerty /usr/share/X11/xkb/symbols/
-clear
+    sudo cp linux_setup/dotfiles/xkb/symbols/ch_qwerty /usr/share/X11/xkb/symbols/
 
 read -p "Done! Press ENTER to reboot."
 	sudo shutdown -r now
