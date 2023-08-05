@@ -27,15 +27,15 @@ clear
 echo "Installing packages..."
 sleep 3s
     # xorg-fonts Try without it
-	sudo xbps-install -Sy swaylock swayidle dbus-elogind polkit elogind mesa-dri gvfs fonts-roboto-ttf font-awesome sway git lazygit github-cli qrcp neofetch nano wget firefox alsa-utils brightnessctl tlp tlp-rdw grim htop foot dmenu Waybar
+	sudo xbps-install -Sy swaylock swayidle dbus-elogind polkit elogind mesa-dri gvfs fonts-roboto-ttf font-awesome sway git lazygit github-cli qrcp neofetch nano wget firefox alsa-utils brightnessctl tlp tlp-rdw grim htop foot dmenu Waybar vscode
 	
-clear
+
 
 echo "Create directory..."
 sleep 3s
     cd ~ && mkdir -p Code Pics/Screenshots Notes Download .config
     sudo cp -a linux_setup/img/wallpaper/xmas_tree_wp.jpeg ~/Pics/xmas_tree_wp.jpeg
-clear
+
 
 echo "Configuring system..."
 sleep 10s
@@ -58,6 +58,10 @@ sleep 10s
     sudo cp -a linux_setup/dotfiles/.config/. ~/.config/
 
     sudo cp linux_setup/dotfiles/xkb/symbols/ch_qwerty /usr/share/X11/xkb/symbols/
+
+
+echo "Removing bitmap fonts..."
+    sudo ln -s /usr/share/fontconfig/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d/
 
 read -p "Done! Press ENTER to reboot."
 	sudo shutdown -r now
