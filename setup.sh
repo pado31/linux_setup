@@ -59,6 +59,15 @@ sleep 10s
 
     sudo cp linux_setup/dotfiles/xkb/symbols/ch_qwerty /usr/share/X11/xkb/symbols/
 
+echo "Setting Network Manager up"
+sleep 5s
+    sudo sv down dhcpcd
+    sudo rm /var/service/dhcpcd
+    sudo sv down wpa_supplicant
+    sudo rm /var/service/wpa_supplicant
+
+    sudo ln -s /etc/sv/NetworkManager/ /var/service/
+
 
 echo "Removing bitmap fonts..."
     sudo ln -s /usr/share/fontconfig/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d/
