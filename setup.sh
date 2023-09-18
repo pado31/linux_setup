@@ -67,6 +67,7 @@ sleep 5s
     sudo rm /var/service/wpa_supplicant
 
     sudo ln -s /etc/sv/NetworkManager/ /var/service/
+    # Use nmtui to create new connections...
 
 
 echo "Removing bitmap fonts..."
